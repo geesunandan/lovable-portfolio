@@ -17,7 +17,7 @@ const Contact = () => {
             <span className="text-gradient">Get in Touch</span>
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
-            Open to new opportunities and collaborations. Let's build something great together.
+            
           </p>
         </motion.div>
 

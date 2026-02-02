@@ -110,7 +110,7 @@ const Hero = () => {
             <span className="text-primary">cloud infrastructure</span>,{" "}
             <span className="text-accent">CI/CD pipelines</span>, and{" "}
             <span className="text-success">highly available systems</span>.
-            Passionate about automation and operational excellence.
+            
           </motion.p>
 
           {/* Social links */}
