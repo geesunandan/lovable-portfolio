@@ -4,7 +4,7 @@ import awsSaaBadge from "../assets/aws-saa-badge.png";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden px-4 py-20">
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden px-4 py-16 sm:py-20 md:py-24">
       {/* Background grid pattern */}
       <div className="absolute inset-0 bg-[linear-gradient(hsl(var(--border)/0.3)_1px,transparent_1px),linear-gradient(90deg,hsl(var(--border)/0.3)_1px,transparent_1px)] bg-[size:60px_60px] [mask-image:radial-gradient(ellipse_80%_80%_at_50%_50%,black_40%,transparent_100%)]" />
       
@@ -79,7 +79,7 @@ const Hero = () => {
               <img
                 src={awsSaaBadge}
                 alt="AWS Certified Solutions Architect – Associate badge"
-                className="h-28 w-28 md:h-30 md:w-30 object-contain"
+                className="h-24 w-24 sm:h-28 sm:w-28 md:h-32 md:w-32 object-contain"
                 loading="lazy"
               />
             </a>

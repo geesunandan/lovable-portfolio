@@ -3,7 +3,7 @@ import { Mail, MapPin, Phone, Github, Linkedin, FileText } from "lucide-react";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-24 px-4 relative">
+    <section id="contact" className="py-16 sm:py-20 md:py-24 px-4 relative">
       <div className="container mx-auto max-w-4xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -26,9 +26,9 @@ const Contact = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="glass-card p-8 md:p-12"
+          className="glass-card overflow-hidden p-6 sm:p-8 md:p-12"
         >
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-10">
             {/* Contact Info */}
             <div className="space-y-6">
               <h3 className="text-xl font-mono font-semibold text-foreground mb-6">
@@ -37,7 +37,7 @@ const Contact = () => {
 
               <a
                 href="mailto:ghimiresunandan@gmail.com"
-                className="flex w-full min-w-0 items-center gap-4 p-4 rounded-lg bg-secondary/50 border border-border/50 hover:border-primary/50 transition-all duration-300 group"
+                className="flex w-full min-w-0 items-center gap-4 p-4 rounded-lg bg-secondary/50 border border-border/50 hover:border-primary/50 transition-all duration-300 group overflow-hidden"
               >
                 <div className="p-3 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
                   <Mail className="w-5 h-5 text-primary" />
@@ -85,14 +85,14 @@ const Contact = () => {
                   href="https://github.com/geesunandan"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex w-full min-w-0 items-center gap-4 p-4 rounded-lg bg-secondary/50 border border-border/50 hover:border-primary/50 transition-all duration-300 group"
+                  className="flex w-full min-w-0 items-center gap-4 p-4 rounded-lg bg-secondary/50 border border-border/50 hover:border-primary/50 transition-all duration-300 group overflow-hidden"
                 >
                   <div className="p-3 rounded-lg bg-foreground/5 group-hover:bg-foreground/10 transition-colors">
                     <Github className="w-5 h-5 text-foreground" />
                   </div>
                   <div className="flex-1 min-w-0">
                     <p className="text-sm text-muted-foreground">GitHub</p>
-                    <p className="text-foreground font-mono break-words">@geesunandan</p>
+                    <p className="text-foreground font-mono break-words max-w-full">@geesunandan</p>
                   </div>
                   <span className="flex-shrink-0 text-muted-foreground group-hover:text-primary transition-colors">→</span>
                 </a>
@@ -101,14 +101,14 @@ const Contact = () => {
                   href="https://www.linkedin.com/in/sunandan-ghimire-a5735a215/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex w-full min-w-0 items-center gap-4 p-4 rounded-lg bg-secondary/50 border border-border/50 hover:border-primary/50 transition-all duration-300 group"
+                  className="flex w-full min-w-0 items-center gap-4 p-4 rounded-lg bg-secondary/50 border border-border/50 hover:border-primary/50 transition-all duration-300 group overflow-hidden"
                 >
                   <div className="p-3 rounded-lg bg-foreground/5 group-hover:bg-foreground/10 transition-colors">
                     <Linkedin className="w-5 h-5 text-foreground" />
                   </div>
                   <div className="flex-1 min-w-0">
                     <p className="text-sm text-muted-foreground">LinkedIn</p>
-                    <p className="text-foreground font-mono break-words">sunandan-ghimire</p>
+                    <p className="text-foreground font-mono break-words max-w-full">sunandan-ghimire</p>
                   </div>
                   <span className="flex-shrink-0 text-muted-foreground group-hover:text-primary transition-colors">→</span>
                 </a>
@@ -117,14 +117,14 @@ const Contact = () => {
                   href="https://medium.com/@ghimiresunandan"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex w-full min-w-0 items-center gap-4 p-4 rounded-lg bg-secondary/50 border border-border/50 hover:border-primary/50 transition-all duration-300 group"
+                  className="flex w-full min-w-0 items-center gap-4 p-4 rounded-lg bg-secondary/50 border border-border/50 hover:border-primary/50 transition-all duration-300 group overflow-hidden"
                 >
                   <div className="p-3 rounded-lg bg-foreground/5 group-hover:bg-foreground/10 transition-colors">
                     <FileText className="w-5 h-5 text-foreground" />
                   </div>
                   <div className="flex-1 min-w-0">
                     <p className="text-sm text-muted-foreground">Medium</p>
-                    <p className="text-foreground font-mono break-words">@ghimiresunandan</p>
+                    <p className="text-foreground font-mono break-words max-w-full">@ghimiresunandan</p>
                   </div>
                   <span className="flex-shrink-0 text-muted-foreground group-hover:text-primary transition-colors">→</span>
                 </a>

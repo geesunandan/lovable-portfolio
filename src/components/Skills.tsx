@@ -67,7 +67,7 @@ const Skills = () => {
   const [cliError, setCliError] = useState<string | null>(null);
 
   return (
-    <section id="skills" className="py-24 px-4 relative">
+    <section id="skills" className="py-16 sm:py-20 md:py-24 px-4 relative">
       <div className="container mx-auto max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -193,18 +193,23 @@ const Skills = () => {
                     }[category.color];
 
                     return (
-                      <div key={category.title} className="flex gap-3 text-sm md:text-base">
+                      <div
+                        key={category.title}
+                        className="grid grid-cols-[auto,auto,1fr] gap-x-3 text-sm md:text-base"
+                      >
                         <span className="text-muted-foreground">▹</span>
-                        <span className={`shrink-0 ${color}`}>{category.title}:</span>
-                        <span className="text-muted-foreground">{category.skills.join(", ")}</span>
+                        <span className={`${color}`}>{category.title}:</span>
+                        <span className="text-muted-foreground min-w-0 break-words">
+                          {category.skills.join(", ")}
+                        </span>
                       </div>
                     );
                   })}
 
-                  <div className="flex gap-3 text-sm md:text-base pt-1">
+                  <div className="grid grid-cols-[auto,auto,1fr] gap-x-3 text-sm md:text-base pt-1">
                     <span className="text-muted-foreground">▹</span>
-                    <span className="text-accent shrink-0">Also proficient with:</span>
-                    <span className="text-muted-foreground">Linux, Git, Azure</span>
+                    <span className="text-accent">Also proficient with:</span>
+                    <span className="text-muted-foreground min-w-0 break-words">Linux, Git, Azure</span>
                   </div>
                 </motion.div>
               )}
