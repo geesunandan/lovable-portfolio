@@ -106,7 +106,7 @@ const Hero = () => {
             transition={{ delay: 1, duration: 0.6 }}
             className="text-lg text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed"
           >
-            2+ years of experience building and maintaining{" "}
+            Experienced in building and maintaining{" "}
             <span className="text-primary">cloud infrastructure</span>,{" "}
             <span className="text-accent">CI/CD pipelines</span>, and{" "}
             <span className="text-success">highly available systems</span>.
