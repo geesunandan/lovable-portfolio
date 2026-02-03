@@ -37,14 +37,16 @@ const Contact = () => {
 
               <a
                 href="mailto:ghimiresunandan@gmail.com"
-                className="flex items-center gap-4 p-4 rounded-lg bg-secondary/50 border border-border/50 hover:border-primary/50 transition-all duration-300 group"
+                className="flex w-full min-w-0 items-center gap-4 p-4 rounded-lg bg-secondary/50 border border-border/50 hover:border-primary/50 transition-all duration-300 group"
               >
                 <div className="p-3 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
                   <Mail className="w-5 h-5 text-primary" />
                 </div>
-                <div>
+                <div className="min-w-0">
                   <p className="text-sm text-muted-foreground">Email</p>
-                  <p className="text-foreground font-mono">ghimiresunandan@gmail.com</p>
+                  <p className="text-foreground font-mono break-all">
+                    ghimiresunandan@gmail.com
+                  </p>
                 </div>
               </a>
 
@@ -61,11 +63,11 @@ const Contact = () => {
                 </div>
               </a> */}
 
-              <div className="flex items-center gap-4 p-4 rounded-lg bg-secondary/50 border border-border/50">
+              <div className="flex w-full min-w-0 items-center gap-4 p-4 rounded-lg bg-secondary/50 border border-border/50">
                 <div className="p-3 rounded-lg bg-success/10">
                   <MapPin className="w-5 h-5 text-success" />
                 </div>
-                <div>
+                <div className="min-w-0">
                   <p className="text-sm text-muted-foreground">Location</p>
                   <p className="text-foreground font-mono">Bhaktapur, Nepal</p>
                 </div>
@@ -83,48 +85,48 @@ const Contact = () => {
                   href="https://github.com/geesunandan"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-4 p-4 rounded-lg bg-secondary/50 border border-border/50 hover:border-primary/50 transition-all duration-300 group"
+                  className="flex w-full min-w-0 items-center gap-4 p-4 rounded-lg bg-secondary/50 border border-border/50 hover:border-primary/50 transition-all duration-300 group"
                 >
                   <div className="p-3 rounded-lg bg-foreground/5 group-hover:bg-foreground/10 transition-colors">
                     <Github className="w-5 h-5 text-foreground" />
                   </div>
-                  <div className="flex-1">
+                  <div className="flex-1 min-w-0">
                     <p className="text-sm text-muted-foreground">GitHub</p>
-                    <p className="text-foreground font-mono">@geesunandan</p>
+                    <p className="text-foreground font-mono break-words">@geesunandan</p>
                   </div>
-                  <span className="text-muted-foreground group-hover:text-primary transition-colors">→</span>
+                  <span className="flex-shrink-0 text-muted-foreground group-hover:text-primary transition-colors">→</span>
                 </a>
 
                 <a
                   href="https://www.linkedin.com/in/sunandan-ghimire-a5735a215/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-4 p-4 rounded-lg bg-secondary/50 border border-border/50 hover:border-primary/50 transition-all duration-300 group"
+                  className="flex w-full min-w-0 items-center gap-4 p-4 rounded-lg bg-secondary/50 border border-border/50 hover:border-primary/50 transition-all duration-300 group"
                 >
                   <div className="p-3 rounded-lg bg-foreground/5 group-hover:bg-foreground/10 transition-colors">
                     <Linkedin className="w-5 h-5 text-foreground" />
                   </div>
-                  <div className="flex-1">
+                  <div className="flex-1 min-w-0">
                     <p className="text-sm text-muted-foreground">LinkedIn</p>
-                    <p className="text-foreground font-mono">sunandan-ghimire</p>
+                    <p className="text-foreground font-mono break-words">sunandan-ghimire</p>
                   </div>
-                  <span className="text-muted-foreground group-hover:text-primary transition-colors">→</span>
+                  <span className="flex-shrink-0 text-muted-foreground group-hover:text-primary transition-colors">→</span>
                 </a>
 
                 <a
                   href="https://medium.com/@ghimiresunandan"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-4 p-4 rounded-lg bg-secondary/50 border border-border/50 hover:border-primary/50 transition-all duration-300 group"
+                  className="flex w-full min-w-0 items-center gap-4 p-4 rounded-lg bg-secondary/50 border border-border/50 hover:border-primary/50 transition-all duration-300 group"
                 >
                   <div className="p-3 rounded-lg bg-foreground/5 group-hover:bg-foreground/10 transition-colors">
                     <FileText className="w-5 h-5 text-foreground" />
                   </div>
-                  <div className="flex-1">
+                  <div className="flex-1 min-w-0">
                     <p className="text-sm text-muted-foreground">Medium</p>
-                    <p className="text-foreground font-mono">@ghimiresunandan</p>
+                    <p className="text-foreground font-mono break-words">@ghimiresunandan</p>
                   </div>
-                  <span className="text-muted-foreground group-hover:text-primary transition-colors">→</span>
+                  <span className="flex-shrink-0 text-muted-foreground group-hover:text-primary transition-colors">→</span>
                 </a>
               </div>
             </div>
