@@ -67,7 +67,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Location</p>
-                  <p className="text-foreground font-mono">Sanothimi, Bhaktapur, Nepal</p>
+                  <p className="text-foreground font-mono">Bhaktapur, Nepal</p>
                 </div>
               </div>
             </div>
