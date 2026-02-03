@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1220"/>
+      <stop offset="1" stop-color="#070A12"/>
+    </linearGradient>
+    <radialGradient id="orb1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(280 180) rotate(35) scale(420 300)">
+      <stop stop-color="#3B82F6" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#3B82F6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(920 420) rotate(-25) scale(520 360)">
+      <stop stop-color="#A855F7" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#A855F7" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 H 0 V 60" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox">
+      <stop stop-color="#22C55E"/>
+      <stop offset="0.5" stop-color="#3B82F6"/>
+      <stop offset="1" stop-color="#A855F7"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="0.8"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)" opacity="0.55"/>
+  <rect width="1200" height="630" fill="url(#orb1)"/>
+  <rect width="1200" height="630" fill="url(#orb2)"/>
+
+  <!-- Content -->
+  <g transform="translate(96 120)">
+    <!-- Prompt line -->
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="22">
+      <text x="0" y="0" fill="#22C55E">œ</text>
+      <text x="34" y="0" fill="#93C5FD">whoami</text>
+      <rect x="118" y="-18" width="10" height="28" rx="2" fill="#3B82F6" opacity="0.9" filter="url(#soft)"/>
+    </g>
+
+    <!-- Name -->
+    <text x="0" y="92"
+      font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace"
+      font-size="72" font-weight="700" fill="#FFFFFF">
+      Sunandan Ghimire
+    </text>
+
+    <!-- Title -->
+    <text x="0" y="150"
+      font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace"
+      font-size="34" font-weight="600" fill="#C7D2FE" opacity="0.95">
+      DevOps Engineer
+    </text>
+
+    <!-- Accent rule -->
+    <rect x="0" y="188" width="520" height="6" rx="3" fill="url(#accent)" opacity="0.95"/>
+
+    <!-- Skills line -->
+    <text x="0" y="240"
+      font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace"
+      font-size="24" fill="#9CA3AF">
+      AWS " Terraform " Kubernetes " CI/CD " Observability
+    </text>
+
+    <!-- URL -->
+    <text x="0" y="296"
+      font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace"
+      font-size="22" fill="#E5E7EB" opacity="0.9">
+      sunandan.com.np
+    </text>
+  </g>
+</svg>
